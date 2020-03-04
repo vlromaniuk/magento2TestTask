@@ -1,7 +1,6 @@
 <?php
 
 /**
-
 elogic theme.
 @author Vladislav Romaniuk vlad96r@protonmial.com
 @copyright 2020 Vlromaniuk

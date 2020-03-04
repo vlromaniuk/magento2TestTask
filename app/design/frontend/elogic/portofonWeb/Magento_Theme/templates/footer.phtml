@@ -1,0 +1,76 @@
+<div class="footer content">
+    <div class="box informational page-main">
+        <ul>
+            <li>
+                <h4 class="title">Contactgegevens</h4>
+                <ul class="footer-content">
+                    <li>PortofoonWEB <br> Zonnedauw 16 <br>9202 PA Drachten</li>
+                    <li><a href="tel:0512 - 745 293">0512 - 745 293</a> <br> <a href="mailto:info@portofoonweb.nl">info@portofoonweb.nl</a>
+                    </li>
+                    <li>K.v.K nr: 62061712</li>
+                    <li>BTW nr: NL854624624B01.</li>
+                </ul>
+            </li>
+            <li>
+                <h4 class="title">Klantenservice</h4>
+                <ul class="footer-content">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Over PortofoonWEB</a></li>
+                    <li><a href="#">Offerte aanvraag</a></li>
+                    <li><a href="#">Defect en Retour</a></li>
+                    <li><a href="#">Garantie</a></li>
+                    <li><a href="#">Veelgestelde vragen</a></li>
+                    <li><a href="#">B2B</a></li>
+                </ul>
+            </li>
+            <li>
+                <h4 class="title">Algemene Informatie</h4>
+                <ul class="footer-content">
+                    <li><a href="#">Portofoons</a></li>
+                    <li><a href="#">Toepassingen</a></li>
+                    <li><a href="#">Algemene voorwaarden</a></li>
+                    <li><a href="#">Betalen en Verzenden</a></li>
+                    <li><a href="#">Cookie statement</a></li>
+                    <li><a href="#">Privacy statement</a></li>
+                </ul>
+            </li> 
+            <li>
+                <h4 class="title">Nieuwsbrief</h4>
+                <ul class="footer-content">
+                    <li>
+                        <p>Wilt u op de hoogte gehouden worden van de nieuwste Technieken & Aanbiedingen op het gebied van Portofoons?</p>
+                        <div class="block newsletter">
+                            <div class="content">
+                                <form class="form subscribe"
+                                      novalidate
+                                      action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+                                      method="post"
+                                      data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+                                      id="newsletter-validate-detail">
+                                    <div class="field newsletter">
+                                        <div>
+                                            <label for="newsletter">
+                                                <input name="email" type="email" id="newsletter"
+                                                       placeholder="<?= $block->escapeHtml(__('uw emailadres... ')) ?>"
+                                                       data-mage-init='{"mage/trim-input":{}}'
+                                                       data-validate="{required:true, 'validate-email':true}"
+                                                />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <button class="action subscribe"
+                                                type="submit"
+                                                aria-label="Subscribe">
+
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>

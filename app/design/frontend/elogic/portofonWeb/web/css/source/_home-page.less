@@ -1,0 +1,86 @@
+.home-page-title{
+  font-family: @font-family__Roboto-Regular;
+  color: @portofon_color_Dim-Gray;
+  text-align: center;
+}
+.content-home-page{
+  color: @portofon_color_Dim-Gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  p.title{
+    font-family: @font-family__Roboto-Bold;
+    font-weight: 700;
+  }
+
+  >div{
+    width: 55%;
+  }
+
+  &::before{
+    content: '';
+    background: url("@{baseDir}images/ima1.png") no-repeat center;
+    width: 197px;
+    background-size: contain;
+    position: absolute;
+    height: 277px;
+    top: -61px;
+    left: 86px;
+  }
+}
+.home-page_social-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div{
+    padding-right: 10px;
+  }
+  i{
+    font-size: 40px;
+    color: @portofon_color_Atlantis;
+    padding: 5px;
+  }
+}
+.owl-theme.owl-carousel{
+  padding: 0;
+  li{
+    list-style: none;
+    img{
+      width: auto;
+      max-width: 200px;
+      max-height: 60px;
+    }
+  }
+  .owl-stage{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @portofon_screen__xl) {
+  .column.main{
+    .content-home-page::before{
+      top: -43px;
+      left: 16px;
+    }
+    .home-page-title {
+      font-size: 35px;
+    }
+  }
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .column.main{
+    .content-home-page{
+      div{
+        width: 100%;
+      }
+      &::before{
+      display: none;
+    }}
+    .home-page-title {
+      font-size: 19px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="https://use.fontawesome.com/releases/v5.2.0/css/all.css" src_type="url"/>
+        <css src="Magento_Theme::css/owl.carousel.css"/>
+    </head>
+    <referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template"  name="portofon.home.page" template="Magento_Theme::example_homepage.phtml"/>
+        <block class="Magento\Framework\View\Element\Template"  name="portofon.carousel" template="Magento_Theme::carousel.phtml"/>
+    </referenceContainer>
+    <container name="copyright" htmlTag="div" htmlClass="copyright" after="footer-container">
+        <block class="Magento\Framework\View\Element\Template"  name="portofon.copyright" template="Magento_Theme::copyright.phtml"/>
+    </container>
+    <referenceContainer name="footer">
+        <block class="Magento\Framework\View\Element\Template"  name="portofon.footer" template="Magento_Theme::footer.phtml"/>
+    </referenceContainer>
+    <referenceBlock name="footer_links" remove="true"/>
+    <referenceBlock name="report.bugs" remove="true"/>
+    <referenceBlock name="form.subscribe" remove="true"/>
+</page>

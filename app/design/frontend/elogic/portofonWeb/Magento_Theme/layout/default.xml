@@ -5,7 +5,16 @@
     <referenceBlock name="header" remove="true"/>
     <referenceBlock name="wish-list-link" remove="true"/>
     <referenceBlock name="register-link" remove="true"/>
+    <referenceBlock name="advanced-search-link" remove="true"/>
     <move element="minicart" destination="top.links" after="register-link"/>
+    <referenceBlock name="logo">
+        <arguments>
+            <argument name="logo_file" xsi:type="string">images/magento-logo.png</argument>
+        </arguments>
+    </referenceBlock>
+    <referenceContainer name="header-wrapper">
+        <block class="Magento\Framework\View\Element\Template"  name="portofon.contact" template="Magento_Theme::contact.phtml" after="-"/>
+    </referenceContainer>
 </page>
 
 
